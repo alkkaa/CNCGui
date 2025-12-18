@@ -1,0 +1,123 @@
+﻿<Page x:Class="CNCGui.Pages.BaseBottomSideBarPanels.BottomPanel1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CNCGui.Pages.BaseBottomSideBarPanels"
+      mc:Ignorable="d" 
+      d:DesignHeight="150" d:DesignWidth="1080"
+      Title="BottomPanel1">
+
+    <Grid x:Name="gridBottomPanelBase">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="gridBottomPanelTop" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+            </Grid.ColumnDefinitions>
+            
+            <!--<TextBlock Text="G Functions" TextWrapping="Wrap" TextAlignment="Center"/>-->
+            <!--TextWrapping="Wrap"-->
+            <Button x:Name="butLoadNCFile" Style="{StaticResource SidePanelButton}" Grid.Column="0" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="butLoadNCFileClick">
+                <TextBlock Text="Load NC File" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butUnloadNCFile" Style="{StaticResource SidePanelButton}" Grid.Column="1" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="butUnloadNCFileClick">
+                <TextBlock Text="Unload NC File" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butBasicBlocks" Style="{DynamicResource SidePanelButton}" Grid.Column="2" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Click="butLoadNCFileClick">
+                <TextBlock Text="Basic Blocks" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butTimeCounter" Style="{DynamicResource SidePanelButton}" Grid.Column="3" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Click="butLoadNCFileClick">
+                <TextBlock Text="Time Counter" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butProgramLevels" Style="{DynamicResource SidePanelButton}" Grid.Column="4" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Click="butLoadNCFileClick">
+                <TextBlock Text="Program Levels" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butSpare" Style="{DynamicResource SidePanelButton}" Grid.Column="5" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Click="butLoadNCFileClick">
+                <TextBlock Text="Spare" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butSpare2" Style="{DynamicResource SidePanelButton}" Grid.Column="6" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Click="butLoadNCFileClick">
+                <TextBlock Text="Spare2" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butSpare3" Style="{DynamicResource SidePanelButton}" Grid.Column="7" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Click="butLoadNCFileClick">
+                <TextBlock Text="Spare3" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butSpare4" Style="{DynamicResource SidePanelButton}" Grid.Column="8" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Click="butLoadNCFileClick">
+                <TextBlock Text="Spare3" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butSidePanel1Next" Style="{DynamicResource SidePanelButton}" Grid.Column="9" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" ToolTip="Close Menu" Click="butLoadNCFileClick">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="70"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/CNCGui;component/Resources/Icons/iconRight.png" Width="40" Height="40"/>
+                </Grid>
+            </Button>
+        </Grid>
+
+        <Grid x:Name="gridBottomPanelBottom" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+                <ColumnDefinition Width="108"/>
+            </Grid.ColumnDefinitions>
+            <!--<TextBlock Text="G Functions" TextWrapping="Wrap" TextAlignment="Center"/>-->
+            <!--TextWrapping="Wrap"-->
+            <Button x:Name="butGFunctions1" Style="{StaticResource SidePanelButton}" Grid.Column="0" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="butLoadNCFileClick">
+                <TextBlock Text="G Functions" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butAuxiliaryFunctions1" Style="{StaticResource SidePanelButton}" Grid.Column="1" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="butLoadNCFileClick">
+                <TextBlock Text="Aux Functions" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butBasicBlocks1" Style="{DynamicResource SidePanelButton}" Grid.Column="2" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Click="butLoadNCFileClick">
+                <TextBlock Text="Basic Blocks" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butTimeCounter1" Style="{DynamicResource SidePanelButton}" Grid.Column="3" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Click="butLoadNCFileClick">
+                <TextBlock Text="Time Counter" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butProgramLevels1" Style="{DynamicResource SidePanelButton}" Grid.Column="4" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Click="butLoadNCFileClick">
+                <TextBlock Text="Program Levels" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butSpare11" Style="{DynamicResource SidePanelButton}" Grid.Column="5" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Click="butLoadNCFileClick">
+                <TextBlock Text="Spare" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butSpare22" Style="{DynamicResource SidePanelButton}" Grid.Column="6" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Click="butLoadNCFileClick">
+                <TextBlock Text="Spare2" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butSpare13" Style="{DynamicResource SidePanelButton}" Grid.Column="7" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Click="butLoadNCFileClick">
+                <TextBlock Text="Spare3" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butSpare14" Style="{DynamicResource SidePanelButton}" Grid.Column="8" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Click="butLoadNCFileClick">
+                <TextBlock Text="Spare3" TextAlignment="Center"/>
+            </Button>
+            <Button x:Name="butSidePanel1Back" Style="{DynamicResource SidePanelButton}" Grid.Column="9" FontSize="14" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" ToolTip="Close Menu" Click="butLoadNCFileClick">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="70"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="1" Source="/CNCGui;component/Resources/Icons/iconLeft.png" Width="40" Height="40"/>
+                </Grid>
+            </Button>
+        </Grid>
+    </Grid>
+</Page>

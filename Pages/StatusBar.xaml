@@ -1,0 +1,62 @@
+﻿<Page x:Class="CNCGui.Pages.StatusBar"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CNCGui.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="40" d:DesignWidth="1080"
+      Title="StatusBar">
+
+    <Grid x:Name="gridStatusIcon" Grid.Row="0" VerticalAlignment="Top" Background="#FFC7CDDD">
+        <StackPanel x:Name="spStatusIcon" Height="40" Orientation="Horizontal" VerticalAlignment="Top" Margin="2.5,0">
+            <Image x:Name="imgStatus1" Width="40" />
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus2" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus3" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus4" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus5" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus6" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus7" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus8" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus9" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus10" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus11" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus12" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus13" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus14" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus15" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus16" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus17" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus18" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus19" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus20" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus21" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus22" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus23" Width="40"/>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Image x:Name="imgStatus24" Width="40"/>
+        </StackPanel>
+    </Grid>
+</Page>

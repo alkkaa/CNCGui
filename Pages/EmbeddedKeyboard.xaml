@@ -1,0 +1,81 @@
+﻿<Page x:Class="CNCGui.Pages.EmbeddedKeyboard"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:CNCGui.Pages"
+      mc:Ignorable="d"
+      d:DesignHeight="250" d:DesignWidth="680"
+      Title="EmbeddedKeyboard">
+
+    <Grid x:Name="gridKeyboard" Margin="5,5,5,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="60"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="butQ" Grid.Column="1" Grid.Row="0" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="Q" Click="butQCharClick"/>
+        <Button x:Name="butW" Grid.Column="2" Grid.Row="0" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="W" Click="butWCharClick"/>
+        <Button x:Name="butE" Grid.Column="3" Grid.Row="0" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="E" Click="butECharClick"/>
+        <Button x:Name="butR" Grid.Column="4" Grid.Row="0" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="R" Click="butRCharClick"/>
+        <Button x:Name="butT" Grid.Column="5" Grid.Row="0" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="T" Click="butTCharClick"/>
+        <Button x:Name="butY" Grid.Column="6" Grid.Row="0" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="Y" Click="butYCharClick"/>
+        <Button x:Name="butU" Grid.Column="7" Grid.Row="0" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="U" Click="butUCharClick"/>
+        <Button x:Name="butI" Grid.Column="8" Grid.Row="0" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="I" Click="butICharClick"/>
+        <Button x:Name="butO" Grid.Column="9" Grid.Row="0" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="O" Click="butOCharClick"/>
+        <Button x:Name="butP" Grid.Column="10" Grid.Row="0" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="P" Click="butPCharClick"/>
+
+        <Button x:Name="butA" Grid.Column="1" Grid.Row="1" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="A" Click="butACharClick"/>
+        <Button x:Name="butS" Grid.Column="2" Grid.Row="1" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="S" Click="butSCharClick"/>
+        <Button x:Name="butD" Grid.Column="3" Grid.Row="1" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="D" Click="butDCharClick"/>
+        <Button x:Name="butF" Grid.Column="4" Grid.Row="1" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="F" Click="butFCharClick"/>
+        <Button x:Name="butG" Grid.Column="5" Grid.Row="1" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="G" Click="butGCharClick"/>
+        <Button x:Name="butH" Grid.Column="6" Grid.Row="1" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="H" Click="butHCharClick"/>
+        <Button x:Name="butJ" Grid.Column="7" Grid.Row="1" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="J" Click="butJCharClick"/>
+        <Button x:Name="butK" Grid.Column="8" Grid.Row="1" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="K" Click="butKCharClick"/>
+        <Button x:Name="butL" Grid.Column="9" Grid.Row="1" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="L" Click="butLCharClick"/>
+
+        <Button x:Name="butZ" Grid.Column="2" Grid.Row="2" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="Z" Click="butZCharClick"/>
+        <Button x:Name="butX" Grid.Column="3" Grid.Row="2" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="X" Click="butXCharClick"/>
+        <Button x:Name="butC" Grid.Column="4" Grid.Row="2" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="C" Click="butCCharClick"/>
+        <Button x:Name="butV" Grid.Column="5" Grid.Row="2" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="V" Click="butVCharClick"/>
+        <Button x:Name="butB" Grid.Column="6" Grid.Row="2" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="B" Click="butBCharClick"/>
+        <Button x:Name="butN" Grid.Column="7" Grid.Row="2" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="N" Click="butNCharClick"/>
+        <Button x:Name="butM" Grid.Column="8" Grid.Row="2" FontSize="18" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="M" Click="butMCharClick"/>
+
+
+
+        <!-- keyboard functions -->
+        <Button x:Name="butEscape"      Grid.Column="0" Grid.Row="0" FontSize="22" Background="#FF93ABD1" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="ESC" Click="butEscClick"/>
+        <Button x:Name="butTab"         Grid.Column="0" Grid.Row="1" FontSize="22" Background="#FF93ABD1" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="->|" Click="butTabClick"/>
+        <ToggleButton x:Name="butShift" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" FontSize="22" Background="#FF93ABD1" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="Shift" Checked="butShiftChecked"/>
+        <Button x:Name="butCtrl"        Grid.Column="0" Grid.Row="3" FontSize="22" Background="#FF93ABD1" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="Ctrl" Click="butCtrlClick"/>
+        <Button x:Name="butAlt"         Grid.Column="1" Grid.Row="3" FontSize="22" Background="#FF93ABD1" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="Alt" Click="butAltClick"/>
+        <Button x:Name="butSpace"       Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="4" FontSize="18" Background="#FF93ABD1" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="" Click="butSpaceClick"/>
+        <Button x:Name="butBackslash"   Grid.Column="6" Grid.Row="3" FontSize="18" Background="#FF93ABD1" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="\" Click="butBackslashClick"/>
+        <Button x:Name="butUnderscore"  Grid.Column="7" Grid.Row="3" FontSize="18" Background="#FF93ABD1" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="_" Click="butUnderscoreClick"/>
+        <Button x:Name="butColon"       Grid.Column="8" Grid.Row="3" FontSize="18" Background="#FF93ABD1" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content=":"  Click="butColonClick"/>
+        <Button x:Name="butPlusMinus"   Grid.Column="9" Grid.Row="3" FontSize="18" Background="#FF93ABD1" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="+/-" Click="butPlusMinusClick"/>
+        <Button x:Name="butApostrophe"  Grid.Column="10" Grid.Row="3" FontSize="18" Background="#FF93ABD1" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="'" Click="butApostropheClick"/>
+        <Button x:Name="butLeftBraces"  Grid.Column="9" Grid.Row="2" FontSize="18" Background="#FF93ABD1" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="[" Click="butLeftBracesClick"/>
+        <Button x:Name="butRighttBraces" Grid.Column="10" Grid.Row="2" FontSize="18" Background="#FF93ABD1" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="]" Click="butRighttBracesClick"/>
+        <Button x:Name="butTemp"        Grid.Column="10" Grid.Row="1" FontSize="18" Background="#FF93ABD1" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Focusable="False" Content="" Click="butTempClick"/>
+
+
+    </Grid>
+</Page>

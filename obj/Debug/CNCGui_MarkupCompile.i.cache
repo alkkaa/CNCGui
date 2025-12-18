@@ -1,0 +1,20 @@
+﻿CNCGui
+
+
+winexe
+C#
+.cs
+D:\Coding Workspace\Visual Studio Workspace\CNCGui\CNCGui\obj\Debug\
+CNCGui
+none
+false
+DEBUG;TRACE
+D:\Coding Workspace\Visual Studio Workspace\CNCGui\CNCGui\App.xaml
+11989059656
+
+17-943776614
+17466722179
+MainWindow.xaml;Menu.xaml;Pages\ATFSData.xaml;Pages\BaseMidSideBarPanels\SidePanel2.xaml;Pages\BaseMidSideBarPanels\SidePanel1.xaml;Pages\Information.xaml;Pages\EmbeddedKeyboard.xaml;Pages\KeyboardFunc.xaml;Pages\NCProgramMonitor.xaml;Pages\Numpad.xaml;Pages\StatusBar.xaml;
+
+False
+

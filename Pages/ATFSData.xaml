@@ -1,0 +1,142 @@
+﻿<Page x:Class="CNCGui.Pages.ATFSData"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CNCGui.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="940"
+      Title="AxisData">
+
+    <Grid x:Name="gridATFS" Height="400" Width="940">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="440"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="gridAxisData" Grid.Column="0" Width="500" Background="WhiteSmoke" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="370"/>
+            </Grid.RowDefinitions>
+            <Border BorderThickness="1" BorderBrush="Gray"/>
+            <Border BorderThickness="1" BorderBrush="Gray" Grid.RowSpan="2"/>
+            <StackPanel x:Name="spAxisLabel" Height="30" Width="500" Orientation="Horizontal">
+                <!-- Margin="0,0,0,325" -->
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Margin" Value="0,0,90,0"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Label x:Name="lblAxisName" Width="100" FontSize="17" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Work"/>
+                <Label x:Name="lblPosition" Width="120" FontSize="17" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Position [mm]"/>
+                <Label x:Name="lblDistToGo" Width="100" FontSize="17" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Dist-to-go"/>
+            </StackPanel>
+            <Grid x:Name="gridPosData" Grid.Row="1" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="200" />
+                </Grid.ColumnDefinitions>
+                <StackPanel x:Name="spAxisData" Grid.Row="1" Grid.Column="0" Height="300" Width="100" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!-- Margin="0,25,400,0" -->
+                    <Label x:Name="lblAxisXName" Height="50" FontSize="35" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="X"/>
+                    <Label x:Name="lblAxisYName" Height="50" FontSize="35" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Y"/>
+                    <Label x:Name="lblAxisZName" Height="50" FontSize="35" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Z"/>
+                    <Label x:Name="lblAxisAName" Height="50" FontSize="25" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="A"/>
+                    <Label x:Name="lblAxisBName" Height="50" FontSize="25" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="B"/>
+                    <Label x:Name="lblAxisCName" Height="50" FontSize="25" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="C"/>
+                </StackPanel>
+                <StackPanel x:Name="spPosition" Grid.Row="1" Grid.Column="1" Height="300" Width="200" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Label x:Name="lblXPosition" Height="50" FontSize="35" FontFamily="Arial" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" ContentStringFormat="{}{0:#,#.00}"/>
+                    <Label x:Name="lblYPosition" Height="50" FontSize="35" FontFamily="Arial" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" ContentStringFormat="{}{0:#,#.00}"/>
+                    <Label x:Name="lblZPosition" Height="50" FontSize="35" FontFamily="Arial" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" ContentStringFormat="{}{0:#,#.00}"/>
+                    <Label x:Name="lblAPosition" Height="50" FontSize="25" FontFamily="Arial" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" ContentStringFormat="{}{0:#,#.00}"/>
+                    <Label x:Name="lblBPosition" Height="50" FontSize="25" FontFamily="Arial" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" ContentStringFormat="{}{0:#,#.00}"/>
+                    <Label x:Name="lblCPosition" Height="50" FontSize="25" FontFamily="Arial" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" ContentStringFormat="{}{0:#,#.00}"/>
+                </StackPanel>
+                <StackPanel x:Name="spDistToGo" Grid.Row="1" Grid.Column="2" Height="300" Width="200" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Label x:Name="lblXDistToGo" Height="50" FontSize="35" FontFamily="Arial" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" ContentStringFormat="{}{0:0.###}"/>
+                    <Label x:Name="lblYDistToGo" Height="50" FontSize="35" FontFamily="Arial" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" ContentStringFormat="{}{0:0.###}"/>
+                    <Label x:Name="lblZDistToGo" Height="50" FontSize="35" FontFamily="Arial" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" ContentStringFormat="{}{0:0.###}"/>
+                    <Label x:Name="lblADistToGo" Height="50" FontSize="25" FontFamily="Arial" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" ContentStringFormat="{}{0:0.###}"/>
+                    <Label x:Name="lblBDistToGo" Height="50" FontSize="25" FontFamily="Arial" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" ContentStringFormat="{}{0:0.###}"/>
+                    <Label x:Name="lblCDistToGo" Height="50" FontSize="25" FontFamily="Arial" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" ContentStringFormat="{}{0:F3}"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <Grid x:Name="gridTFSData" Width="440" Grid.Column="2" Background="WhiteSmoke">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="90"/>
+            </Grid.RowDefinitions>
+            <Border BorderThickness="1" BorderBrush="Gray"/>
+            <Border BorderThickness="1" BorderBrush="Gray" Grid.RowSpan="2"/>
+            <Border BorderThickness="1" BorderBrush="Gray" Grid.RowSpan="3"/>
+            <Border BorderThickness="1" BorderBrush="Gray" Grid.RowSpan="4"/>
+            <!-- <Border BorderThickness="1" BorderBrush="Black"></Border> -->
+            <StackPanel x:Name="spTFSLabel" Grid.Row="0" Height="30" Width="440" Orientation="Horizontal">
+                <Label x:Name="lblTFS" Width="100" FontSize="17" FontFamily="Arial" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="T,F,S"/>
+            </StackPanel>
+            <Grid x:Name="gridToolBase" Grid.Row="1">
+                <Grid x:Name="gridToolData">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="310" />
+                        <ColumnDefinition Width="100" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="33"/>
+                        <RowDefinition Height="33"/>
+                        <RowDefinition Height="34"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="lblT" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" FontSize="35" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Content="T"/>
+                    <Label x:Name="lblToolName" Grid.Column="1" Grid.Row="0" FontSize="17" FontFamily="Arial" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="FaceMill D63"/>
+                    <Label x:Name="lblToolDValue" Grid.Column="1" Grid.Row="1" FontSize="17" FontFamily="Arial" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="D1"/>
+                    <Label x:Name="lblToolNameAct" Grid.Column="1" Grid.Row="2" FontSize="17" FontFamily="Arial" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="►► FaceMill D63"/>
+                    <Label x:Name="lblToolCompR" Grid.Column="2" Grid.Row="0" FontSize="17" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="R -000.000"/>
+                    <Label x:Name="lblToolCompL" Grid.Column="2" Grid.Row="1" FontSize="17" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="L -000.000"/>
+                </Grid>
+            </Grid>
+            <Grid x:Name="gridFeedrateData" Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="lblF" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" FontSize="35" FontFamily="Arial" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Content="F"/>
+                <Label x:Name="lblFeedrateActVal" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" FontSize="42" FontFamily="Arial" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="99999.999"/>
+                <Label x:Name="lblFeedrateSetVal" Grid.Column="1" Grid.Row="1" FontSize="19" FontFamily="Arial" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="99999.999"/>
+                <Label x:Name="lblFeedrateUnit" Grid.Column="2" Grid.Row="1" FontSize="19" FontFamily="Arial" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="mm/min"/>
+                <Label x:Name="lblFeedratePercentage" Grid.Column="4" Grid.Row="1" FontSize="19" FontFamily="Arial" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Content="99.9%"/>
+            </Grid>
+            <Grid x:Name="gridSpindleData" Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="15"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="lblS" Grid.Column="0" Grid.Row="0" FontSize="35" FontFamily="Arial" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Content="S"/>
+                <Label x:Name="lblSpindleActVal" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" FontSize="40" FontFamily="Arial" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="99999"/>
+                <Label x:Name="lblSpindleMaster" Grid.Column="0" Grid.Row="1" FontSize="19" FontFamily="Arial" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="Master"/>
+                <Label x:Name="lblSpindleSetVal" Grid.Column="1" Grid.Row="1" FontSize="19" FontFamily="Arial" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="99999"/>
+                <Label x:Name="lblSpindlePercentage" Grid.Column="4" Grid.Row="1" FontSize="19" FontFamily="Arial" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Content="99.9%"/>
+                <Image x:Name="imgSpindleStatus" Grid.Column="4" Grid.Row="0" Source="/CNCGui;component/Resources/Icons/iconRunning.png" Width="50" Height="50" />
+            </Grid>
+        </Grid>
+    </Grid>
+    
+</Page>

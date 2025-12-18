@@ -1,0 +1,39 @@
+﻿<Page x:Class="CNCGui.Pages.NCProgramMonitor"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CNCGui.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="530" d:DesignWidth="940"
+      Title="NCProgramMonitor">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/> <!-- for file path -->
+            <RowDefinition Height="500"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="lblNCFilePath" Grid.Row="0" Background="#FF1B4FB4" Foreground="White" FontFamily="Arial" FontSize="17" Content="NC/Programs/Rectangle"/>
+        <StackPanel x:Name="spNCButtons" Orientation="Horizontal" Margin="300,0,0,0">
+            <Button x:Name="butLoadNCFile" Grid.Row="0" Width="100" Content="Load NC File" Click="butLoadNCFileClick"/>
+            <Button x:Name="butTextHighlight" Grid.Row="0" Width="100" Content="Unload NC File" Click="butUnloadNCFileClick"/>
+            <Button x:Name="butScrollTo" Grid.Row="0" Width="100" Content="ScrollTo" Click="butScrollToClick"/>
+            <Button x:Name="butLineUp" Grid.Row="0" Width="100" Content="LineUp" Click="butLineUpClick"/>
+            <Button x:Name="butLineDown" Grid.Row="0" Width="100" Content="LineDown" Click="butLineDownClick"/>
+            <Label x:Name="lblTotalLine" Grid.Row="0" Width="100" />
+        </StackPanel>
+        
+        <avalonEdit:TextEditor 
+            xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
+            x:Name="teNCProgram" 
+            x:FieldModifier="public" 
+            Grid.Row="1" 
+            FontFamily="Consolas" 
+            SyntaxHighlighting="C#" 
+            ShowLineNumbers="True" 
+            FontSize="10pt"
+                               />
+
+
+    </Grid>
+</Page>
